@@ -11,17 +11,24 @@ export function App() {
     const [messageList, setMessage] = useState([]);
 
     const addMessage = (message) => {
-        setMessage([...messageList, { author: 'user', text: message }]);
+        if (message) {
+            setMessage([...messageList, { author: 'user', text: message }]);
+        }
     }
 
     useEffect(() => {
-        setTimeout(() => {
+        let timerId = null;
+        timerId = setTimeout(() => {
             if (messageList.length > 0) {
                 if (messageList[messageList.length - 1].author === 'user') {
                     setMessage([...messageList, { author: 'bot', text: 'Вам отвечает робот!' }]);
                 }
             }
-        }, 1500)
+        }, 1500);
+
+        return () => {
+            clearInterval(timerId);
+        }
     }, [messageList])
 
     return (
