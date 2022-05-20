@@ -1,0 +1,27 @@
+$coffe-darck: #b4a39a;
+$coffe-dessert: #d3c9c3;
+$coffe-light: #f6f0ec;
+$darck: #000;
+$white: #fff;
+
+.left {
+    width: 80%;
+    height: min-content;
+    padding: .3rem;
+    border: 1px solid $darck;
+    border-radius: .5rem;
+    box-shadow: 1px 3px 4px 2px rgba(0, 1, 2, 0.3);
+    margin: auto 0 .3rem 0;
+    background-color: $coffe-light;
+}
+
+.right {
+    width: 80%;
+    height: min-content;
+    padding: .3rem;
+    border: 1px solid $darck;
+    border-radius: .5rem;
+    box-shadow: 1px 3px 4px 2px rgba(0, 1, 2, 0.3);
+    margin: 0 0 .3rem auto;
+    background-color: $coffe-dessert;
+}

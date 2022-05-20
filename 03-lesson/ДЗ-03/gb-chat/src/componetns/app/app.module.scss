@@ -1,0 +1,51 @@
+$coffee: #cab5aa;
+$coffe-light: #f6f0ec;
+$darck: #000;
+$white: #fff;
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 97%;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.header {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    flex: 1 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1%;
+
+    &__chat_list {
+        /* height: 200px; */
+        overflow-y: scroll;
+    }
+
+    &__msg_wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.msg_list {
+    height: 20px;
+    flex: 1 0 auto;
+    overflow-y: scroll;
+}
+
+.msg_form {
+    flex: 0 0 auto;
+}
