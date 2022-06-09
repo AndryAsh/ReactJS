@@ -1,0 +1,48 @@
+/* body {
+    margin: 0;
+    padding: 0;
+} */
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 97%;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+.header {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.message_greeting {}
+
+.content {
+    width: 100%;
+    flex: 1 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    /* border: 1px solid green; */
+
+    &__chat-list {
+        height: 100%;
+    }
+
+    &__msg-wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.msg-list {
+    flex: 1 0 auto;
+}
+
+.msg-form {
+    flex: 0 0 auto;
+}
