@@ -1,0 +1,30 @@
+$coffee_1: #bc9875;
+$coffee_2: #554438;
+$coffee_3: #725947;
+$coffee_4: #b89988;
+$coffee_5: #a87441;
+
+.item:hover {
+    cursor: pointer;
+}
+
+.item:hover>.icon {
+    color: #fff;
+}
+
+.icon,
+.text {
+    color: #554438;
+}
+
+.text span {
+    font-size: 14px;
+}
+
+.description {
+    width: 100%;
+}
+
+.description .text:last-child {
+    text-align: right;
+}
