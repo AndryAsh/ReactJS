@@ -1,0 +1,19 @@
+.item {
+    width: 50%;
+}
+
+.profile_wrapper {
+    display: flex;
+    max-width: 97%;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.profile_item {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
